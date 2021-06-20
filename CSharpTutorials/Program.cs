@@ -6,7 +6,8 @@ namespace CSharpTutorials
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("SpeciFIX");
+            string message = "SpeciFIX";
+            Console.WriteLine(message);
         }
     }
 }
