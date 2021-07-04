@@ -77,7 +77,7 @@ namespace CSharpTutorials
 
             int? x = null;
 
-            x ??= 5;
+            x ??= 5; //??= assigns value of the right operand only if the left operand is null
         }
     }
 }
