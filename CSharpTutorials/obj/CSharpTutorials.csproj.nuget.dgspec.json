@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mertakkaya/FirstCSharpProject/CSharpTutorials/CSharpTutorials/CSharpTutorials.csproj": {}
+    "/Users/mertakkaya/CSharpTutorials/CSharpTutorials/CSharpTutorials.csproj": {}
   },
   "projects": {
-    "/Users/mertakkaya/FirstCSharpProject/CSharpTutorials/CSharpTutorials/CSharpTutorials.csproj": {
+    "/Users/mertakkaya/CSharpTutorials/CSharpTutorials/CSharpTutorials.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mertakkaya/FirstCSharpProject/CSharpTutorials/CSharpTutorials/CSharpTutorials.csproj",
+        "projectUniqueName": "/Users/mertakkaya/CSharpTutorials/CSharpTutorials/CSharpTutorials.csproj",
         "projectName": "CSharpTutorials",
-        "projectPath": "/Users/mertakkaya/FirstCSharpProject/CSharpTutorials/CSharpTutorials/CSharpTutorials.csproj",
+        "projectPath": "/Users/mertakkaya/CSharpTutorials/CSharpTutorials/CSharpTutorials.csproj",
         "packagesPath": "/Users/mertakkaya/.nuget/packages/",
-        "outputPath": "/Users/mertakkaya/FirstCSharpProject/CSharpTutorials/CSharpTutorials/obj/",
+        "outputPath": "/Users/mertakkaya/CSharpTutorials/CSharpTutorials/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mertakkaya/.config/NuGet/NuGet.Config"
