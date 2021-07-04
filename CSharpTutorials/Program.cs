@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using static MyClass;
 
 namespace CSharpTutorials
 {
@@ -59,9 +60,18 @@ namespace CSharpTutorials
             //Console.WriteLine(kata.SeriesSum(79));
             //Console.WriteLine(kata.SeriesSum(48));
 
-            Console.WriteLine(kata.FindNextSquare(121));
-            Console.WriteLine(kata.FindNextSquare(625));
-            Console.WriteLine(kata.FindNextSquare(114));
+            //Console.WriteLine(kata.FindNextSquare(121));
+            //Console.WriteLine(kata.FindNextSquare(625));
+            //Console.WriteLine(kata.FindNextSquare(114));
+
+            Coordinate point = new Coordinate(10, 20);
+
+            point.x = 20;
+
+            Console.WriteLine(point.x);
+
+            //it is easier to transfer a class object than a struct. So do not use struct when you are passing data across the wire or to other classes.
+            // TODO: Structure alttaki iki kod bloğu incelenecek
         }
     }
 }
