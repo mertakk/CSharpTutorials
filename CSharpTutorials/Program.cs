@@ -78,6 +78,27 @@ namespace CSharpTutorials
             int? x = null;
 
             x ??= 5; //??= assigns value of the right operand only if the left operand is null
+
+            //Ternary ----------
+
+            x = 10;
+            int y = 100;
+
+            var resultTernary = x > y ? "x is greater than y" : "x is less than y";
+
+            Console.WriteLine(result);
+
+            //Same as ----------
+
+            x = 10;
+            y = 100;
+
+            if (x > y)
+                Console.WriteLine("x is greater than y");
+            else
+                Console.WriteLine("x is less than y");
+
+            //Ternary end ----------
         }
     }
 }
