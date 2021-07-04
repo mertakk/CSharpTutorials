@@ -73,8 +73,6 @@ namespace CSharpTutorials
             //it is easier to transfer a class object than a struct. So do not use struct when you are passing data across the wire or to other classes.
             // TODO: Structure alttaki iki kod bloğu incelenecek
 
-            // TODO: Interface'e kadar gelinecek
-
             int? x = null;
 
             x ??= 5; //??= assigns value of the right operand only if the left operand is null
