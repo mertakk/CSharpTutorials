@@ -72,6 +72,7 @@ namespace CSharpTutorials
             Console.WriteLine(point.x);
 
             //it is easier to transfer a class object than a struct. So do not use struct when you are passing data across the wire or to other classes.
+            //Struct does not include in inheritance.
 
             int? x = null;
 
@@ -104,6 +105,22 @@ namespace CSharpTutorials
             sbAmout.AppendFormat("{0:C} ", 25);
 
             Console.WriteLine(sbAmout); //9 times out of 10 though... use the string builder.
+
+            IList<Student> studentList = new List<Student>() {
+            new Student() { StudentID = 1, StudentName = "John", age = 18 },
+            new Student() { StudentID = 2, StudentName = "Steve",  age = 21 },
+            new Student() { StudentID = 3, StudentName = "Bill",  age = 18 },
+            new Student() { StudentID = 4, StudentName = "Ram" , age = 20  },
+            new Student() { StudentID = 5, StudentName = "Ron" , age = 21 }
+        };
+
+            var students = from s in studentList
+                           select new { Id = s.StudentID, Name = s.StudentName };
+
+            foreach (var stud in students)
+                Console.WriteLine(stud.Id + "-" + stud.Name);
+            //select clause in the LINQ query selects only StudentID and StudentName properties and renames it to Id and Name, respectively.
+            //Thus, it is useful in saving memory and unnecessary code.
         }
     }
 }

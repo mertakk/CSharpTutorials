@@ -2,6 +2,13 @@
 
 public class MyClass
 {
+    public class Student
+    {
+        public int StudentID { get; set; }
+        public string StudentName { get; set; }
+        public int age { get; set; }
+    }
+
     public string myField = string.Empty;
 
     public MyClass()
