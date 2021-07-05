@@ -97,6 +97,8 @@ namespace CSharpTutorials
                 Console.WriteLine("x is less than y");
 
             //Ternary end ----------
+
+            Console.WriteLine((int)State.Active);
         }
     }
 }

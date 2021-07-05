@@ -45,4 +45,10 @@ public class MyClass
             this.y = y;
         }
     }
+
+    public enum State : byte
+    {
+        Passive,
+        Active
+    }
 }
