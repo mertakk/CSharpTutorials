@@ -133,6 +133,8 @@ namespace CSharpTutorials
 
             MyDynamicVar = DateTime.Now;
             Console.WriteLine("Value: {0}, Type: {1}", MyDynamicVar, MyDynamicVar.GetType());
+
+            //Partial methods must use the partial keyword and must return void.
         }
     }
 }
