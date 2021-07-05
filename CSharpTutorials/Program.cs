@@ -121,6 +121,18 @@ namespace CSharpTutorials
                 Console.WriteLine(stud.Id + "-" + stud.Name);
             //select clause in the LINQ query selects only StudentID and StudentName properties and renames it to Id and Name, respectively.
             //Thus, it is useful in saving memory and unnecessary code.
+
+            dynamic MyDynamicVar = 100;
+            Console.WriteLine("Value: {0}, Type: {1}", MyDynamicVar, MyDynamicVar.GetType());
+
+            MyDynamicVar = "Hello World!!";
+            Console.WriteLine("Value: {0}, Type: {1}", MyDynamicVar, MyDynamicVar.GetType());
+
+            MyDynamicVar = true;
+            Console.WriteLine("Value: {0}, Type: {1}", MyDynamicVar, MyDynamicVar.GetType());
+
+            MyDynamicVar = DateTime.Now;
+            Console.WriteLine("Value: {0}, Type: {1}", MyDynamicVar, MyDynamicVar.GetType());
         }
     }
 }
