@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using static MyClass;
 
 namespace CSharpTutorials
@@ -71,7 +72,6 @@ namespace CSharpTutorials
             Console.WriteLine(point.x);
 
             //it is easier to transfer a class object than a struct. So do not use struct when you are passing data across the wire or to other classes.
-            // TODO: Structure alttaki iki kod bloğu incelenecek
 
             int? x = null;
 
@@ -99,6 +99,11 @@ namespace CSharpTutorials
             //Ternary end ----------
 
             Console.WriteLine((int)State.Active);
+
+            StringBuilder sbAmout = new StringBuilder("Your total amount is ");
+            sbAmout.AppendFormat("{0:C} ", 25);
+
+            Console.WriteLine(sbAmout); //9 times out of 10 though... use the string builder.
         }
     }
 }
