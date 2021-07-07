@@ -13,7 +13,8 @@ public class MyClass
 
     public MyClass()
     {
-    }
+        public Nullable<int> i;
+}
 
     public void MyMethod(int parameter1, string parameter2)
     {

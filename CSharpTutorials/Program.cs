@@ -135,6 +135,32 @@ namespace CSharpTutorials
             Console.WriteLine("Value: {0}, Type: {1}", MyDynamicVar, MyDynamicVar.GetType());
 
             //Partial methods must use the partial keyword and must return void.
+
+            MyClass mycls = new MyClass();
+
+            if (mycls.i == null)
+            {
+                Console.WriteLine("Null");
+            }
+
+            //It must be assigned a value before using it if nullable types are declared in a function as local variables.
+            //If it is a field of any class then it will have a null value by default.
+
+            int? i = null;
+            int j = 10;
+
+            if (Nullable.Compare<int>(i, j) < 0)
+                Console.WriteLine("i < j");
+            else if (Nullable.Compare<int>(i, j) > 0)
+                Console.WriteLine("i > j");
+            else
+                Console.WriteLine("i = j");
+
+            //compare method to compare nullable types
+
+            //Nullable types can only be used with value types.
+
+            //You can only use == and != operators with a nullable type. For other comparison use the Nullable static class.
         }
     }
 }
