@@ -174,6 +174,11 @@ namespace CSharpTutorials
             //If we change a string value, then the compiler creates a new string object in the memory and point a variable to the new memory location.
             //So, passing a string value to a function will create a new variable in the memory,
             //and any change in the value in the function will not be reflected in the original value
+
+            Console.WriteLine(Kata.SquareDigits(0));
+            Console.WriteLine(Kata.SquareDigits(99));
+            Console.WriteLine(Kata.SquareDigits(11));
+            Console.WriteLine(Kata.SquareDigits(3245));
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+
 namespace CSharpTutorials
 {
     public class Kata
@@ -83,6 +85,20 @@ namespace CSharpTutorials
             }
 
             return input;
+        }
+
+        public static int SquareDigits(int n)
+        {
+            string inputNumberAsText = n.ToString();
+            StringBuilder outputNumberAsText = new StringBuilder();
+
+            for (int i = 0; i < inputNumberAsText.Length; i++)
+            {
+                var tempNumber = Convert.ToInt32(inputNumberAsText[i] - '0');
+                // TODO: - '0' işlemini sil. Neden 57 çıkıyor '9'?
+                outputNumberAsText.Append(Math.Pow(tempNumber, 2).ToString());
+            }
+            return Convert.ToInt32(outputNumberAsText.ToString());
         }
     }
 }

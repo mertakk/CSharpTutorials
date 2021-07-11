@@ -10,53 +10,53 @@ public class MyClass
     }
 
     public string myField = string.Empty;
+    public Nullable<int> i;
 
     public MyClass()
     {
-        public Nullable<int> i;
+    }
+
+public void MyMethod(int parameter1, string parameter2)
+{
+    Console.WriteLine("First Parameter {0}, second parameter {1}",
+                                                parameter1, parameter2);
 }
 
-    public void MyMethod(int parameter1, string parameter2)
+public int MyAutoImplementedProperty { get; set; }
+
+private int _myPropertyVar;
+
+public int MyProperty
+{
+    get
     {
-        Console.WriteLine("First Parameter {0}, second parameter {1}",
-                                                    parameter1, parameter2);
+        return _myPropertyVar / 2;
     }
 
-    public int MyAutoImplementedProperty { get; set; }
-
-    private int _myPropertyVar;
-
-    public int MyProperty
+    set
     {
-        get
-        {
-            return _myPropertyVar / 2;
-        }
-
-        set
-        {
-            if (value > 100)
-                _myPropertyVar = 100;
-            else
-                _myPropertyVar = value; ;
-        }
+        if (value > 100)
+            _myPropertyVar = 100;
+        else
+            _myPropertyVar = value; ;
     }
+}
 
-    public struct Coordinate
+public struct Coordinate
+{
+    public int x;
+    public int y;
+
+    public Coordinate(int x, int y)
     {
-        public int x;
-        public int y;
-
-        public Coordinate(int x, int y)
-        {
-            this.x = x;
-            this.y = y;
-        }
+        this.x = x;
+        this.y = y;
     }
+}
 
-    public enum State : byte
-    {
-        Passive,
-        Active
-    }
+public enum State : byte
+{
+    Passive,
+    Active
+}
 }
