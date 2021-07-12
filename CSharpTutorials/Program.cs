@@ -179,6 +179,12 @@ namespace CSharpTutorials
             Console.WriteLine(Kata.SquareDigits(99));
             Console.WriteLine(Kata.SquareDigits(11));
             Console.WriteLine(Kata.SquareDigits(3245));
+
+            //It is recommended to implement interfaces explicitly (void IBinaryFile.ReadFile()) when implementing multiple interfaces
+            //to avoid confusion and more readability.
+            //Interface cannot include private, protected, or internal members. All the members are public by default.
+            //Use public modifier when implementing interface implicitly, whereas don't use it in case of explicit implementation.
+            //An interface can inherit one or more interfaces.
         }
     }
 }
