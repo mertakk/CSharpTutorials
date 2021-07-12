@@ -185,6 +185,17 @@ namespace CSharpTutorials
             //Interface cannot include private, protected, or internal members. All the members are public by default.
             //Use public modifier when implementing interface implicitly, whereas don't use it in case of explicit implementation.
             //An interface can inherit one or more interfaces.
+
+            //Static means something which cannot be instantiated. You cannot create an object of a static class and cannot access static members using an object.
+            //All the members of a static class must be static; otherwise the compiler will give an error.
+            //var cannot be used to define static members. You must specify a type of member explicitly after the static keyword.
+            //Static class members can be accessed using ClassName.MemberName.
+            //Static fields of a non-static class is shared across all the instances. So, changes done by one instance would reflect in others.
+            //You cannot call static methods using an object of the non-static class.
+            //The static methods can only call other static methods and access static members. You cannot access non-static members of the class in the static methods.
+            //Static methods can be overloaded but cannot be overridden.
+            //Static methods cannot access or call non-static variables unless they are explicitly passed as parameters.
+            //The static constructor is called only once whenever the static method is used or creating an instance for the first time.
         }
     }
 }
