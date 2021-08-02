@@ -196,6 +196,38 @@ namespace CSharpTutorials
             //Static methods can be overloaded but cannot be overridden.
             //Static methods cannot access or call non-static variables unless they are explicitly passed as parameters.
             //The static constructor is called only once whenever the static method is used or creating an instance for the first time.
+
+            int[,,,] arr4d2 = new int[1, 2, 2, 2]{
+            {
+                {{1, 2}, {3, 4}},
+                {{5, 6}, {7, 8}}
+            }
+        };
+
+            arr4d2[1, 1, 1, 1] = 2;
+
+            int[][][] intJaggedArray = new int[2][][]
+                            {
+                                new int[2][]
+                                {
+                                    new int[3] { 1, 2, 3},
+                                    new int[2] { 4, 5}
+                                },
+                                new int[1][]
+                                {
+                                    new int[3] { 7, 8, 9}
+                                }
+                            };
+
+            Console.WriteLine(intJaggedArray[0][0][0]); // 1
+
+            Console.WriteLine(intJaggedArray[0][1][1]); // 5
+
+            Console.WriteLine(intJaggedArray[1][0][2]); // 9
+
+            //In the above example of a jagged array, three brackets[][][] means an array of array of array. So, intJaggedArray will contain two elements,
+            //which means two arrays. Now, each of these arrays also contains an array(single-dimension). intJaggedArray[0][0][0] points to the first
+            //element of first inner array.intJaggedArray[1][0][2] points to the third element of the second inner array.
         }
     }
 }
