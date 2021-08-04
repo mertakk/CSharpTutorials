@@ -282,6 +282,33 @@ namespace CSharpTutorials
             cities.Add("Chicago");
             cities.Add(null);// nulls are allowed for reference type list
 
+            //SortedList Sorts elements as soon as they are added.
+            //It is recommended to use generic SortedList<TKey, TValue> because it performs faster and less error-prone than the non-generic SortedList.
+            //Keys cannot be null or duplicate.
+
+            SortedList<int, string> numberNames = new SortedList<int, string>()
+                                    {
+                                        {3, "Three"},
+                                        {5, "Five"},
+                                        {1, "One"}
+                                    };
+
+            Console.WriteLine("---Initial key-values--");
+
+            foreach (KeyValuePair<int, string> kvp in numberNames)
+                Console.WriteLine("key: {0}, value: {1}", kvp.Key, kvp.Value);
+
+            numberNames.Add(6, "Six");
+            numberNames.Add(2, "Two");
+            numberNames.Add(4, "Four");
+
+            Console.WriteLine("---After adding new key-values--");
+
+            foreach (var kvp in numberNames)
+                Console.WriteLine("key: {0}, value: {1}", kvp.Key, kvp.Value);
+
+            //Use Keys and Values properties if you want to iterate a SortedList using a for loop.
+
         }
     }
 }
