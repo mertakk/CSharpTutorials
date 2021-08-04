@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -266,6 +267,13 @@ namespace CSharpTutorials
 
             //In most cases, it is recommended to use the generic collections because they perform faster than non-generic collections
             //and also minimize exceptions by giving compile-time errors.
+
+            var arlist = new ArrayList();
+
+            //An ArrayList can be used to add unknown data where you don't know the types and the size of the data.
+
+            //It is not recommended to use the ArrayList class due to performance issue. Instead, use List<object> to store heterogeneous objects.
+            //To store data of same data type, use Generic List<T>.
 
         }
     }
