@@ -100,5 +100,31 @@ namespace CSharpTutorials
             }
             return Convert.ToInt32(outputNumberAsText.ToString());
         }
+
+        public long RowSumOddNumbers(long n)
+        {
+            var firstOfRow = n * (n - 1) + 1;
+            long sum = 0;
+
+            for (int i = 0; i < n; i++)
+            {
+                sum += firstOfRow + i * 2;
+
+            }
+            return sum;
+        }
+
+        public string GetMiddle(string s)
+        {
+            if (s.Length == 1)
+            {
+                return s;
+            }
+            if (s.Length % 2 == 1)
+            {
+                return s[(s.Length - 1) / 2].ToString();
+            }
+            return s[(s.Length - 1) / 2].ToString() + s[((s.Length - 1) / 2) + 1].ToString();
+        }
     }
 }

@@ -59,4 +59,15 @@ public enum State : byte
     Passive,
     Active
 }
+    public class StringDataStore
+    {
+        private string[] strArr = new string[10]; // internal data storage
+
+        public string this[int index]
+        {
+            get => strArr[index];
+
+            set => strArr[index] = value;
+        }
+    }
 }
