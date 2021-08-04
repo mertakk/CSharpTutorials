@@ -259,6 +259,14 @@ namespace CSharpTutorials
             //Console.WriteLine(kata.GetMiddle("middle"));
             //Console.WriteLine(kata.GetMiddle("A"));
 
+            //Generic constraint descriptions are important!
+
+            DataStore<int> store = new DataStore<int>(); // valid
+            DataStore<char> store2 = new DataStore<char>(); // valid
+
+            //In most cases, it is recommended to use the generic collections because they perform faster than non-generic collections
+            //and also minimize exceptions by giving compile-time errors.
+
         }
     }
 }

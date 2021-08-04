@@ -70,4 +70,8 @@ public enum State : byte
             set => strArr[index] = value;
         }
     }
+    public class DataStore<T> where T : struct
+    {
+        public T Data { get; set; }
+    }
 }
