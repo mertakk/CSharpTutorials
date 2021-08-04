@@ -275,6 +275,13 @@ namespace CSharpTutorials
             //It is not recommended to use the ArrayList class due to performance issue. Instead, use List<object> to store heterogeneous objects.
             //To store data of same data type, use Generic List<T>.
 
+            var cities = new List<string>();
+            cities.Add("New York");
+            cities.Add("London");
+            cities.Add("Mumbai");
+            cities.Add("Chicago");
+            cities.Add(null);// nulls are allowed for reference type list
+
         }
     }
 }
