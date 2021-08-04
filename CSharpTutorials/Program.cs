@@ -311,6 +311,25 @@ namespace CSharpTutorials
 
             //The difference between SortedList and Dictionary is that Dictionary is not ordered.
 
+            //Hashtable is a loosely typed (non-generic) collection, this means it stores key-value pairs of any data types.
+            //Dictionary is a generic collection. So it can store key-value pairs of specific data types.
+            //Data retrieval is slower than dictionary because of boxing-unboxing.
+            //Data retrieval is faster than Hashtable.
+
+            Hashtable numberNames2 = new Hashtable();
+            numberNames2.Add(1, "One"); //adding a key/value using the Add() method
+            numberNames2.Add(2, "Two");
+            numberNames2.Add(3, "Three");
+
+            Dictionary<int, string> dict = new Dictionary<int, string>();
+            dict.Add(1, "one");
+            dict.Add(2, "two");
+            dict.Add(3, "three");
+
+            Hashtable ht = new Hashtable(dict);
+
+            //HashTable is non-generic, Dictionary is generic.
+
         }
     }
 }
