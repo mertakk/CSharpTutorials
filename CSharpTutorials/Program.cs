@@ -309,6 +309,8 @@ namespace CSharpTutorials
 
             //Use Keys and Values properties if you want to iterate a SortedList using a for loop.
 
+            //The difference between SortedList and Dictionary is that Dictionary is not ordered.
+
         }
     }
 }
