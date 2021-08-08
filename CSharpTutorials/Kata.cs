@@ -126,5 +126,22 @@ namespace CSharpTutorials
             }
             return s[(s.Length - 1) / 2].ToString() + s[((s.Length - 1) / 2) + 1].ToString();
         }
+
+        public string OddOrEven(int[] array)
+        {
+            var sum = 0;
+            
+            foreach (var member in array)
+            {
+                sum += member;
+            }
+
+            if (sum % 2 == 1 || sum % 2 == -1)
+            {
+                return "odd";
+            }
+
+            return "even";
+        }
     }
 }

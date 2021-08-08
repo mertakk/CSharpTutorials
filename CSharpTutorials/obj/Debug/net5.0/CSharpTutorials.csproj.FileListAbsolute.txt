@@ -1,0 +1,16 @@
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\bin\Debug\net5.0\CSharpTutorials.exe
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\bin\Debug\net5.0\CSharpTutorials.deps.json
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\bin\Debug\net5.0\CSharpTutorials.runtimeconfig.json
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\bin\Debug\net5.0\CSharpTutorials.runtimeconfig.dev.json
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\bin\Debug\net5.0\CSharpTutorials.dll
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\bin\Debug\net5.0\ref\CSharpTutorials.dll
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\bin\Debug\net5.0\CSharpTutorials.pdb
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\obj\Debug\net5.0\CSharpTutorials.csproj.AssemblyReference.cache
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\obj\Debug\net5.0\CSharpTutorials.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\obj\Debug\net5.0\CSharpTutorials.AssemblyInfoInputs.cache
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\obj\Debug\net5.0\CSharpTutorials.AssemblyInfo.cs
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\obj\Debug\net5.0\CSharpTutorials.csproj.CoreCompileInputs.cache
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\obj\Debug\net5.0\CSharpTutorials.dll
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\obj\Debug\net5.0\ref\CSharpTutorials.dll
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\obj\Debug\net5.0\CSharpTutorials.pdb
+C:\Users\meakkaya\Source\CSharpTutorials\CSharpTutorials\obj\Debug\net5.0\CSharpTutorials.genruntimeconfig.cache

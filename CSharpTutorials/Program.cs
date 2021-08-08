@@ -330,6 +330,12 @@ namespace CSharpTutorials
 
             //HashTable is non-generic, Dictionary is generic.
 
+            //Console.WriteLine(kata.OddOrEven(new int[3] {0, -1, 2}));
+            //Console.WriteLine(kata.OddOrEven(new int[3] {0, 1, -4}));
+            //Console.WriteLine(kata.OddOrEven(new int[3] {-1023, -1, 3}));
+
+            //It is recommended to use the generic Stack<T> collection.
+            //Elements can be retrieved using the Pop() and the Peek() methods. It does not support an indexer.
         }
     }
 }
