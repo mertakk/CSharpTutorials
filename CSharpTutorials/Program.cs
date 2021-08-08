@@ -336,6 +336,10 @@ namespace CSharpTutorials
 
             //It is recommended to use the generic Stack<T> collection.
             //Elements can be retrieved using the Pop() and the Peek() methods. It does not support an indexer.
+            //Can't use array initializer style.
+
+            //Dequeue() removes and returns the first element from a queue. Peek() method always returns the first item from a queue
+            //collection without removing it.
         }
     }
 }
