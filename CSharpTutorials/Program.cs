@@ -360,6 +360,11 @@ namespace CSharpTutorials
             var numbersValueTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14); 
 
             //use discard _ for the unused member LName
+
+            //The ApplicationException was recommended to be base class for all your custom exceptions classes
+            //However, Microsoft now recommends to derive custom exception classes from the Exception class rather than the ApplicationException class .
+
+            //The finally block will always be executed whether or not an exception occurred. The finally block generally used for cleaning-up code e.g., disposing of unmanaged objects.
         }
     }
 }
