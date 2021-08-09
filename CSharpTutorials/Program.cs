@@ -340,6 +340,12 @@ namespace CSharpTutorials
 
             //Dequeue() removes and returns the first element from a queue. Peek() method always returns the first item from a queue
             //collection without removing it.
+
+            Console.WriteLine(kata.IsSquare(-1));
+            Console.WriteLine(kata.IsSquare(3));
+            Console.WriteLine(kata.IsSquare(4));
+            Console.WriteLine(kata.IsSquare(25));
+            Console.WriteLine(kata.IsSquare(26));
         }
     }
 }
