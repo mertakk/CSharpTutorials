@@ -341,11 +341,25 @@ namespace CSharpTutorials
             //Dequeue() removes and returns the first element from a queue. Peek() method always returns the first item from a queue
             //collection without removing it.
 
-            Console.WriteLine(kata.IsSquare(-1));
-            Console.WriteLine(kata.IsSquare(3));
-            Console.WriteLine(kata.IsSquare(4));
-            Console.WriteLine(kata.IsSquare(25));
-            Console.WriteLine(kata.IsSquare(26));
+            //Console.WriteLine(kata.IsSquare(-1));
+            //Console.WriteLine(kata.IsSquare(3));
+            //Console.WriteLine(kata.IsSquare(4));
+            //Console.WriteLine(kata.IsSquare(25));
+            //Console.WriteLine(kata.IsSquare(26));
+
+            //A tuple can only include a maximum of eight elements.
+
+            var numbers = Tuple.Create(1, 2, 3, 4, 5, 6, 7, Tuple.Create(8, 9, 10, 11, 12, 13));
+
+            //When you want to return multiple values from a method without using ref or out parameters.
+            //When you want to pass multiple values to a method through a single parameter.
+            //The Tuple is a reference type and not a value type.
+
+            //Unlike Tuple, a ValueTuple can include more than eight values.
+
+            var numbersValueTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14); 
+
+            //use discard _ for the unused member LName
         }
     }
 }
