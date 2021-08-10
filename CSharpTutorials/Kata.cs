@@ -146,6 +146,9 @@ namespace CSharpTutorials
 
         public bool IsSquare(int n)
         {
+            if (n  == null)
+                throw new NullReferenceException("Object is null.");
+
             if (n < 0 || Math.Sqrt(n) - Math.Floor(Math.Sqrt(n)) > 0)
             {
                 return false;

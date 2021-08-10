@@ -370,6 +370,26 @@ namespace CSharpTutorials
             //When using nested try-catch blocks, an exception will be caught in the first matching catch block that follows the try block where an exception occurred.
 
             //If there isn't an inner catch block that matches with raised exception type, then the control will flow to the outer catch block until it finds an appropriate exception filter.
+
+            //The throw keyword cannot be used with any other type which does not derive from the Exception class.
+
+            //If you re-throw an exception using exception parameter then it will not preserve the original exception and creates a new exception.
+            //never throw an exception using throw <exception parameter>.
+
+            //Microsoft now recommends Exception class to create a custom exception class. You should not throw an ApplicationException exception in your code, and you should not catch
+            //an ApplicationException exception unless you intend to re-throw the original exception.
+        }
+    }
+
+    [Serializable]
+    class InvalidStudentNameException : Exception
+    {
+        public InvalidStudentNameException() {  }
+
+        public InvalidStudentNameException(string name)
+            : base(String.Format("Invalid Student Name: {0}", name))
+        {
+
         }
     }
 }
