@@ -245,8 +245,8 @@ namespace CSharpTutorials
             //- simplified syntax - syntactic sugar
 
             //When to use:
-            //- if your class needs list(/array) of its instances(example 1)
-            //- if your class represents list(/array) of values directly related to your class (example 2)
+            //- if your class needs list(/array) of its instances
+            //- if your class represents list(/array) of values directly related to your class
 
             //Generic and Overloading indexers are important!
 
