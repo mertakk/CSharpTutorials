@@ -365,6 +365,11 @@ namespace CSharpTutorials
             //However, Microsoft now recommends to derive custom exception classes from the Exception class rather than the ApplicationException class .
 
             //The finally block will always be executed whether or not an exception occurred. The finally block generally used for cleaning-up code e.g., disposing of unmanaged objects.
+            //It doesn't let control to leave the finally block.
+
+            //When using nested try-catch blocks, an exception will be caught in the first matching catch block that follows the try block where an exception occurred.
+
+            //If there isn't an inner catch block that matches with raised exception type, then the control will flow to the outer catch block until it finds an appropriate exception filter.
         }
     }
 }
