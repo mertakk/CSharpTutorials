@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text;
 
 namespace CSharpTutorials
@@ -155,6 +156,43 @@ namespace CSharpTutorials
             }
 
             return true;
+        }
+
+        public int Factorial(int n)
+        {
+            if (n < 0 || n > 12)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+
+            var result = 1;
+
+            for (int i = n; i > 0; i--)
+            {
+                    result *= i;
+            }
+
+            return result;
+        }
+
+        public string HighAndLow(string numbers)
+        {
+            int[] parsed = numbers.Split(' ').Select(n => Convert.ToInt32(n)).ToArray();
+            
+            Array.Sort(parsed);
+
+            StringBuilder result = new StringBuilder();
+
+            result.Append(parsed[parsed.Length-1]);
+            result.Append(" ");
+            result.Append(parsed[0]);
+            
+            //string lowest = parsed[0].ToString();
+            //string highest = parsed[parsed.Length-1 ].ToString();
+            
+            //string result = highest + " " + lowest;
+
+            return result.ToString();
         }
     }
 }

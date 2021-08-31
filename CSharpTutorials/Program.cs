@@ -378,6 +378,16 @@ namespace CSharpTutorials
 
             //Microsoft now recommends Exception class to create a custom exception class. You should not throw an ApplicationException exception in your code, and you should not catch
             //an ApplicationException exception unless you intend to re-throw the original exception.
+
+            //Console.WriteLine(kata.Factorial(5));
+            ////Console.WriteLine(kata.Factorial(15));
+            //Console.WriteLine(kata.Factorial(0));
+            //Console.WriteLine(kata.Factorial(-5));
+
+            Console.WriteLine(kata.HighAndLow("5 2 3 1 2"));
+            Console.WriteLine(kata.HighAndLow("-5 2 2 1 1999"));
+            Console.WriteLine(kata.HighAndLow("5 -2 3 0 1 -2"));
+            Console.WriteLine(kata.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
         }
     }
 
