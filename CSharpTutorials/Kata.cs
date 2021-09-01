@@ -194,5 +194,17 @@ namespace CSharpTutorials
 
             return result.ToString();
         }
+        
+        public int Angle(int n)
+        {
+            return (n - 2) * 180;
+        }
+        
+        public int Stray(int[] numbers)
+        {
+            Array.Sort(numbers);
+            
+            return numbers[0] != numbers[1] ? numbers[0] : numbers[numbers.Length - 1];
+        }
     }
 }
