@@ -9,6 +9,7 @@ namespace CSharpTutorials
 {
 
     public delegate void MyDelegate(string msg); //declaring a delegate
+    public delegate void Print(int value);
 
     class MainClass
     {
@@ -423,6 +424,16 @@ namespace CSharpTutorials
             Console.WriteLine(_result);
             
             //Predicate delegate takes one input parameter and boolean return type.
+            
+            //An anonymous method is a method without a name. Anonymous methods in C# can be defined using the delegate keyword and can be assigned to a variable of delegate type.
+            
+            Print print = delegate(int val) { 
+                Console.WriteLine("Inside Anonymous method. Value: {0}", val); 
+            };
+
+            print(100);
+            
+            // TODO: How can we use anonymous method delegate that has a return value?
         }
     }
 
