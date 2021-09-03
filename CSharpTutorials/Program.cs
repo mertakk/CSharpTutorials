@@ -7,6 +7,9 @@ using static MyClass;
 
 namespace CSharpTutorials
 {
+
+    public delegate void MyDelegate(string msg); //declaring a delegate
+
     class MainClass
     {
         public static void Main(string[] args)
@@ -38,17 +41,18 @@ namespace CSharpTutorials
             var arr = new[] { 1, 10, 20, 30 };
             //Console.WriteLine("Type of arr is {0}", arr.GetType());
 
-            IList<string> stringList = new List<string>() {
+            IList<string> stringList = new List<string>()
+            {
                 "C# Tutorials",
                 "VB.NET Tutorials",
                 "Learn C++",
-                "MVC Tutorials" ,
+                "MVC Tutorials",
                 "Java"
             };
 
             var result = from s in stringList
-                         where s.Contains("Tutorials")
-                         select s;
+                where s.Contains("Tutorials")
+                select s;
 
             var result_2 = stringList.Where(s => s.Contains("Tutorials"));
 
@@ -107,16 +111,17 @@ namespace CSharpTutorials
 
             Console.WriteLine(sbAmout); //9 times out of 10 though... use the string builder.
 
-            IList<Student> studentList = new List<Student>() {
-            new Student() { StudentID = 1, StudentName = "John", age = 18 },
-            new Student() { StudentID = 2, StudentName = "Steve",  age = 21 },
-            new Student() { StudentID = 3, StudentName = "Bill",  age = 18 },
-            new Student() { StudentID = 4, StudentName = "Ram" , age = 20  },
-            new Student() { StudentID = 5, StudentName = "Ron" , age = 21 }
-        };
+            IList<Student> studentList = new List<Student>()
+            {
+                new Student() { StudentID = 1, StudentName = "John", age = 18 },
+                new Student() { StudentID = 2, StudentName = "Steve", age = 21 },
+                new Student() { StudentID = 3, StudentName = "Bill", age = 18 },
+                new Student() { StudentID = 4, StudentName = "Ram", age = 20 },
+                new Student() { StudentID = 5, StudentName = "Ron", age = 21 }
+            };
 
             var students = from s in studentList
-                           select new { Id = s.StudentID, Name = s.StudentName };
+                select new { Id = s.StudentID, Name = s.StudentName };
 
             foreach (var stud in students)
                 Console.WriteLine(stud.Id + "-" + stud.Name);
@@ -198,33 +203,33 @@ namespace CSharpTutorials
             //Static methods cannot access or call non-static variables unless they are explicitly passed as parameters.
             //The static constructor is called only once whenever the static method is used or creating an instance for the first time.
 
-        //    int[,,,] arr4d2 = new int[1, 2, 2, 2]{
-        //    {
-        //        {{1, 2}, {3, 4}},
-        //        {{5, 6}, {7, 8}}
-        //    }
-        //};
+            //    int[,,,] arr4d2 = new int[1, 2, 2, 2]{
+            //    {
+            //        {{1, 2}, {3, 4}},
+            //        {{5, 6}, {7, 8}}
+            //    }
+            //};
 
-        //    arr4d2[1, 1, 1, 1] = 2;
+            //    arr4d2[1, 1, 1, 1] = 2;
 
-        //    int[][][] intJaggedArray = new int[2][][]
-        //                    {
-        //                        new int[2][]
-        //                        {
-        //                            new int[3] { 1, 2, 3},
-        //                            new int[2] { 4, 5}
-        //                        },
-        //                        new int[1][]
-        //                        {
-        //                            new int[3] { 7, 8, 9}
-        //                        }
-        //                    };
+            //    int[][][] intJaggedArray = new int[2][][]
+            //                    {
+            //                        new int[2][]
+            //                        {
+            //                            new int[3] { 1, 2, 3},
+            //                            new int[2] { 4, 5}
+            //                        },
+            //                        new int[1][]
+            //                        {
+            //                            new int[3] { 7, 8, 9}
+            //                        }
+            //                    };
 
-        //    Console.WriteLine(intJaggedArray[0][0][0]); // 1
+            //    Console.WriteLine(intJaggedArray[0][0][0]); // 1
 
-        //    Console.WriteLine(intJaggedArray[0][1][1]); // 5
+            //    Console.WriteLine(intJaggedArray[0][1][1]); // 5
 
-        //    Console.WriteLine(intJaggedArray[1][0][2]); // 9
+            //    Console.WriteLine(intJaggedArray[1][0][2]); // 9
 
             //In the above example of a jagged array, three brackets[][][] means an array of array of array. So, intJaggedArray will contain two elements,
             //which means two arrays. Now, each of these arrays also contains an array(single-dimension). intJaggedArray[0][0][0] points to the first
@@ -280,18 +285,18 @@ namespace CSharpTutorials
             cities.Add("London");
             cities.Add("Mumbai");
             cities.Add("Chicago");
-            cities.Add(null);// nulls are allowed for reference type list
+            cities.Add(null); // nulls are allowed for reference type list
 
             //SortedList Sorts elements as soon as they are added.
             //It is recommended to use generic SortedList<TKey, TValue> because it performs faster and less error-prone than the non-generic SortedList.
             //Keys cannot be null or duplicate.
 
             SortedList<int, string> numberNames = new SortedList<int, string>()
-                                    {
-                                        {3, "Three"},
-                                        {5, "Five"},
-                                        {1, "One"}
-                                    };
+            {
+                { 3, "Three" },
+                { 5, "Five" },
+                { 1, "One" }
+            };
 
             Console.WriteLine("---Initial key-values--");
 
@@ -357,7 +362,7 @@ namespace CSharpTutorials
 
             //Unlike Tuple, a ValueTuple can include more than eight values.
 
-            var numbersValueTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14); 
+            var numbersValueTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14);
 
             //use discard _ for the unused member LName
 
@@ -384,17 +389,52 @@ namespace CSharpTutorials
             //Console.WriteLine(kata.Factorial(0));
             //Console.WriteLine(kata.Factorial(-5));
 
-            Console.WriteLine(kata.HighAndLow("5 2 3 1 2"));
-            Console.WriteLine(kata.HighAndLow("-5 2 2 1 1999"));
-            Console.WriteLine(kata.HighAndLow("5 -2 3 0 1 -2"));
-            Console.WriteLine(kata.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+            //Console.WriteLine(kata.HighAndLow("5 2 3 1 2"));
+            //Console.WriteLine(kata.HighAndLow("-5 2 2 1 1999"));
+            //Console.WriteLine(kata.HighAndLow("5 -2 3 0 1 -2"));
+            //Console.WriteLine(kata.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+
+            //Practically, delegates should be declared out of the class.
+
+            MyDelegate del = ClassA.MethodA;
+            del("Hello World");
+
+            del = ClassB.MethodB;
+            del("Hello World");
+
+            del = (string msg) => Console.WriteLine("Called lambda expression: " + msg);
+            del("Hello World");
+            
+            //In .NET, Func and Action types are built-in generic delegates that should be used for most common delegates instead of creating new custom delegates.
+            
+            //If a delegate returns a value, then the last assigned target method's value will be return when a multicast delegate called.
+            
+            //A generic delegate can be defined the same way as a delegate but using generic type parameters or return type. The generic type must be specified when you set a target method.
+        }
+    }
+
+    public class ClassA
+    {
+        public static void MethodA(string message)
+        {
+            Console.WriteLine("Called ClassA.MethodA() with parameter: " + message);
+        }
+    }
+
+    class ClassB
+    {
+        public static void MethodB(string message)
+        {
+            Console.WriteLine("Called ClassB.MethodB() with parameter: " + message);
         }
     }
 
     [Serializable]
     class InvalidStudentNameException : Exception
     {
-        public InvalidStudentNameException() {  }
+        public InvalidStudentNameException()
+        {
+        }
 
         public InvalidStudentNameException(string name)
             : base(String.Format("Invalid Student Name: {0}", name))
