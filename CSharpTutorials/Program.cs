@@ -434,7 +434,8 @@ namespace CSharpTutorials
             print(100);
             
             // TODO: How can we use anonymous method delegate that has a return value?
-            // TODO: Why do we require to use delegates?
+            //Why do we require to use delegates?
+            //https://stackoverflow.com/questions/2019402/when-why-to-use-delegates
             
             //Typically, to raise an event, protected and virtual method should be defined with the name On<EventName>.
             
