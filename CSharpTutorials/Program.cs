@@ -410,6 +410,8 @@ namespace CSharpTutorials
             //If a delegate returns a value, then the last assigned target method's value will be return when a multicast delegate called.
             
             //A generic delegate can be defined the same way as a delegate but using generic type parameters or return type. The generic type must be specified when you set a target method.
+            
+            //Action delegate is same as func delegate except that it does not return anything. Return type must be void.
         }
     }
 
