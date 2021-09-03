@@ -2,6 +2,12 @@
 
 public class MyClass
 {
+    
+    public static bool IsUpperCase(string str)
+    {
+        return str.Equals(str.ToUpper());
+    }
+    
     public class Student
     {
         public int StudentID { get; set; }

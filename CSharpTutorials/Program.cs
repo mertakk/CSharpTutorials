@@ -412,6 +412,17 @@ namespace CSharpTutorials
             //A generic delegate can be defined the same way as a delegate but using generic type parameters or return type. The generic type must be specified when you set a target method.
             
             //Action delegate is same as func delegate except that it does not return anything. Return type must be void.
+            
+            //It represents a method containing a set of criteria and checks whether the passed parameter meets those criteria. A predicate delegate methods must take one input parameter
+            //and return a boolean - true or false.
+            
+            Predicate<string> isUpper = IsUpperCase;
+
+            bool _result = isUpper("hello world!!");
+
+            Console.WriteLine(_result);
+            
+            //Predicate delegate takes one input parameter and boolean return type.
         }
     }
 
