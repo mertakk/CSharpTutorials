@@ -434,6 +434,47 @@ namespace CSharpTutorials
             print(100);
             
             // TODO: How can we use anonymous method delegate that has a return value?
+            // TODO: Why do we require to use delegates?
+            
+            //Typically, to raise an event, protected and virtual method should be defined with the name On<EventName>.
+            
+            MyClass bl = new MyClass();
+            bl.ProcessCompleted += bl_ProcessCompleted; // register with an event
+            bl.StartProcess();
+            
+            //The OnProcessCompleted() method invokes the delegate using ProcessCompleted?.Invoke();. This will call all the event
+            //handler methods registered with the ProcessCompleted event.
+            
+            //Above, the MainClass class is a subscriber of the ProcessCompleted event.
+            //The bl_ProcessCompleted() method handles the event because it matches the signature of the Notify delegate.
+            
+            //.NET Framework includes built-in delegate types EventHandler and EventHandler<TEventArgs> for the most common events.
+            //Typically, any event should include two parameters: the source of the event and event data. Use the EventHandler delegate
+            //for all events that do not include event data. Use EventHandler<TEventArgs> delegate for events that include data to be sent to handlers.
+            
+            //Most events send some data to the subscribers. The EventArgs class is the base class for all the event data classes.
+            //If you want to pass more than one value as event data, then create a class deriving from the EventArgs base class, as shown below.
+            
+            //class ProcessEventArgs : EventArgs
+            //{
+            //    public bool IsSuccessful { get; set; }
+            //    public DateTime CompletionTime { get; set; }
+            //}
+            
+            //The publisher class raises an event, and the subscriber class registers for an event and provides the event-handler method.
+            
+            //The signature of the handler method must match the delegate signature.
+            
+            //Register with an event using the += operator. Unsubscribe it using the -= operator. Cannot use the = operator.
+            
+            //An Interface can include the event as a member.
+            
+            //Event handlers are invoked synchronously if there are multiple subscribers.
+        }
+        
+        public static void bl_ProcessCompleted()
+        {
+            Console.WriteLine("Process Completed!");
         }
     }
 
