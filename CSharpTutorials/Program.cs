@@ -472,7 +472,11 @@ namespace CSharpTutorials
             
             //Event handlers are invoked synchronously if there are multiple subscribers.
             
-            Console.WriteLine(kata.Accum("ZpglnRxqenU"));
+            //Console.WriteLine(kata.Accum("ZpglnRxqenU"));
+            
+            Console.WriteLine(kata.DescendingOrder(123456789));
+            Console.WriteLine(kata.DescendingOrder(145263));
+            Console.WriteLine(kata.DescendingOrder(42145));
         }
         
         public static void bl_ProcessCompleted()

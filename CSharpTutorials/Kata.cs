@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
@@ -232,6 +233,25 @@ namespace CSharpTutorials
             }
             
             return result.ToString();
+        }
+        
+        public int DescendingOrder(int num)
+        {
+            var tempString = num.ToString();
+            
+            List<int> tempList = tempString.Select(c => int.Parse(c.ToString())).ToList();
+            
+            tempList.Sort();
+            tempList.Reverse();
+            
+            var result = 0;
+            
+            foreach (int entry in tempList)
+            {
+                result = 10 * result + entry;
+            }
+            
+            return result;
         }
     }
 }
