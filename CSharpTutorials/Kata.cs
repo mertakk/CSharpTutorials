@@ -206,5 +206,32 @@ namespace CSharpTutorials
             
             return numbers[0] != numbers[1] ? numbers[0] : numbers[numbers.Length - 1];
         }
+        
+        public string Accum(string s)
+        {
+            StringBuilder result = new StringBuilder();
+            
+            for (int i = 0; i < s.Length; i++)
+            {
+                for (int j = 0; j < i+1; j++)
+                {
+                    if (j == 0)
+                    {
+                        result.Append(Char.ToUpper(s[i]));
+                    }
+                    else
+                    {
+                        result.Append(Char.ToLower(s[i]));
+                    }
+                }
+                
+                if (i != s.Length-1)
+                {
+                    result.Append('-');
+                }
+            }
+            
+            return result.ToString();
+        }
     }
 }

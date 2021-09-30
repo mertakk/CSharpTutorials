@@ -471,6 +471,8 @@ namespace CSharpTutorials
             //An Interface can include the event as a member.
             
             //Event handlers are invoked synchronously if there are multiple subscribers.
+            
+            Console.WriteLine(kata.Accum("ZpglnRxqenU"));
         }
         
         public static void bl_ProcessCompleted()
