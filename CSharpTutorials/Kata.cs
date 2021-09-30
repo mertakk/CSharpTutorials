@@ -253,5 +253,43 @@ namespace CSharpTutorials
             
             return result;
         }
+        
+        public double Arithmetic(double a, double b, string op)
+        {
+            switch (op)
+            {
+                case "add":
+                    return a + b;
+                case "subtract":
+                    return a - b;
+                case "multiply":
+                    return a * b;
+                case "divide":
+                    return a / b;
+                default:
+                    throw new Exception();
+            }
+        }
+
+        public bool IsAscOrder(int[] arr)
+        {
+            int[] temp = new int[arr.Length];
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                temp[i] = arr[i];
+            }
+            
+            Array.Sort(arr);
+
+            for (int j = 0; j < arr.Length; j++)
+            {
+                if (arr[j] != temp[j])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }

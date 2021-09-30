@@ -474,9 +474,21 @@ namespace CSharpTutorials
             
             //Console.WriteLine(kata.Accum("ZpglnRxqenU"));
             
-            Console.WriteLine(kata.DescendingOrder(123456789));
-            Console.WriteLine(kata.DescendingOrder(145263));
-            Console.WriteLine(kata.DescendingOrder(42145));
+            //Console.WriteLine(kata.DescendingOrder(123456789));
+            //Console.WriteLine(kata.DescendingOrder(145263));
+            //Console.WriteLine(kata.DescendingOrder(42145));
+
+            //Console.WriteLine(kata.Arithmetic(1, 2, "add"));
+            //Console.WriteLine(kata.Arithmetic(8, 2, "subtract"));
+            //Console.WriteLine(kata.Arithmetic(5, 2, "multiply"));
+            //Console.WriteLine(kata.Arithmetic(8, 2, "divide"));
+            
+            Console.WriteLine(kata.IsAscOrder(new int[]{1,2}));
+            Console.WriteLine(kata.IsAscOrder(new int[]{1,2,3}));
+            Console.WriteLine(kata.IsAscOrder(new int[]{1,3,2}));
+            Console.WriteLine(kata.IsAscOrder(new int[]{3,1,2}));
+            Console.WriteLine(kata.IsAscOrder(new int[]{0,1,2}));
+            Console.WriteLine(kata.IsAscOrder(new int[]{1}));
         }
         
         public static void bl_ProcessCompleted()
